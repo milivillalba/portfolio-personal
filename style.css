@@ -1,0 +1,17 @@
+.fondo-page1{
+    background-image: url(img/img-fondo.jpg);
+}
+.color-primario{
+    background-color: palevioletred !important;
+
+}
+.espacio-superior{
+    margin-top: 2%;
+}
+.color-tex{
+    color: white;
+}
+.navbar{
+    background: rgb(187,0,51);
+    background: linear-gradient(0deg, rgba(187,0,51,1) 0%, rgba(233,216,216,1) 100%);
+}
