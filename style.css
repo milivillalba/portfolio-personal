@@ -20,7 +20,8 @@
     list-style: none;
 }
 span{
-    color:#8A2BE2 ;
+    color: rgb(249,131,187);
+color: radial-gradient(circle, rgba(249,131,187,1) 0%, rgba(246,7,80,1) 100%);
 }
 
 
@@ -69,7 +70,7 @@ body{
     padding:0 40px;
     line-height: 80px;
     text-decoration: none;/*para que saque la linea del enlase*/
-    color:#8A2BE2;
+    color:#818081;
 }
 .nav-menu{
     display: flex; /*quede en forma orizontal todo los linkd del menu*/
@@ -93,7 +94,7 @@ body{
 
 }
 .nav-menu-link:hover{ /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
-    background-color: #DDA0DD;
+    background-color: #8A2BE2;
     transition: 0.5s;/*para que sea un poquito mas lento cuando pasemos la flechita*/
 
 
@@ -155,7 +156,7 @@ body{
         border-radius: 3px;
     }
     .nav-menu-link:hover{ /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
-        background-color: #9c8c9c;
+        background-color: #8A2BE2;
         color: #FF1493;
        
     
