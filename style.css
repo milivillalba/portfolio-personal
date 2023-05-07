@@ -1,5 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/*ipf navegador*/
+.ipf{
+    border-radius: 5px;
+    
+    width: 10%;
+    height: 10%;
+}
+.img-menu{
+    width: 50%;
+    border-radius: 4px;
+}
+.tipo-tex{
+    font-family:'Times New Roman', Times, serif;
+}
+.lista{
+    list-style: none;
+}
+span{
+    color:#8A2BE2 ;
+}
+
 .fondo-page1{
-    background-image: url(img/img-fondo.jpg);
+    background-image: url(img/img-fondo.jpg) ;
 }
 .color-primario{
     background-color: palevioletred !important;
@@ -11,7 +36,127 @@
 .color-tex{
     color: white;
 }
-.navbar{
-    background: rgb(187,0,51);
-    background: linear-gradient(0deg, rgba(187,0,51,1) 0%, rgba(233,216,216,1) 100%);
+body{
+    font-family: sans-serif;
+    padding-top: 90px  20px 0;
+}
+.header{
+    background:none;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;/*para que se centre tos los link del menu al medio*/
+    margin: 0 auto;/*quede todo centrado 0 arri y abaj/ auto iz y derech*/
+
+
+}
+.nav-link{
+    color: wheat;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding:0 40px;
+    line-height: 80px;
+}
+.nav-menu{
+    display: flex; /*quede en forma orizontal todo los linkd del menu*/
+    margin-right: 40px;/*queden separados entre ellos desde la derecha*/
+    list-style: none;/*borrar los puntitos que tienen la listas por defectos*/
+
+}  
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;/*0 para arriba y abajo /1ppx para derecha y izquierda*/
+    line-height: 80px;/*alto de mi barra de nav*/
+    text-transform: uppercase;/*para que todo quede en mayuscula*/
+    width: max-content;/*para que no me corte el contenido*/
+}
+.nav-menu-link{
+    padding: 8px 12px;/*8px para arriba y abajo / 12px para derecha y izquierda*/
+    border-radius: 3px;
+}
+.nav-menu-link:hover{ /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
+    background-color: #FF1493;
+    transition: 0.5s;/*para que sea un poquito mas lento cuando pasemos la flechita*/
+
+
+}
+.nav-toggle{
+    color: white;
+    background: none;/*le sacamos los estilos que trae por defecto el boton*/
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;/*es para que no se vea cuando tengamos la pantalla completa*/
+
+}
+/*diseño para dispositivos moviles*/
+@media(max-width: 768px){/*cuando mi pantalla tenga menos que 768 px se va aplicar estos estilos*/
+    
+    body{
+        padding-top: 70px  20px 0;
+    }
+    .header{
+        background: rgb(187,0,51);
+background: linear-gradient(0deg, rgba(187,0,51,1) 0%, rgba(233,216,216,1) 100%);
+        height: 60px;/*cambio de tamaño por el dispositivo mas pequeño*/
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    
+    }
+   
+    
+    .logo{
+        font-size: 25px;/*cambio tamaño de fuente*/
+        padding:0 20px;
+        line-height: 60px;
+    }
+    .nav-menu{
+        flex-direction: column; /*para poner todo el menu en columna*/
+        align-items: center;/*quede centrado mis enlaces*/
+        margin-right: 20px;/*queden separados entre ellos desde la derecha*/
+        background:none;
+        position:fixed ;/*para que la psicion no dependa de donde se encuentra*/
+        left: 0;
+        top: 60px;/*alto de mi elemento*/
+        width: 100%;/*ancho 100%*/
+        padding: 20px 0;/*20px espacio arriba y abajo /0  para iz y dr para que no contenga ningun espacio en mi ancho de pagina*/
+        
+    }  
+    .nav-menu-item{
+        font-size: 18px;
+        margin: 0 10px;/*0 para arriba y abajo /1ppx para derecha y izquierda*/
+        line-height: 70px;/*alto de mi barra de nav*/
+        text-transform: uppercase;/*para que todo quede en mayuscula*/
+        width: max-content;/*para que no me corte el contenido*/
+    }
+    .nav-menu-link{
+        padding: 8px 12px;/*8px para arriba y abajo / 12px para derecha y izquierda*/
+        border-radius: 3px;
+    }
+    .nav-menu-link:hover{ /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
+        background-color: #FF1493;
+        color: #FF1493;
+       
+    
+    }
+    .nav-toggle{
+        display: block;/*para que aparesca el icon del menu*/
+    }
+    
+
 }
