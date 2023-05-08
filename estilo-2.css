@@ -1,0 +1,19 @@
+.wrapper{  /*es una clase nomas*/
+    display: grid;/*para llamar a grid*/
+    grid-template-columns: repeat(3, 2fr);/*le estoy diciendo que me separe las fotos en 3 columnasy que cada una de las imagenes sea de 1 graccion*/
+}
+.wrapper > div {
+    background-color: #ecf0f1;
+
+
+}
+.wrapper > div:hover{  /*para cuando pase mi flechita se vea una borde como con efecto*/
+    border: 2px solid rgb(88, 83, 83);
+}
+img{
+    width: 400px;
+    
+}
+body{
+    background-image: url(img/fondo-habilidades.jpg);
+}
