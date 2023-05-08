@@ -1,189 +1,173 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 /*ipf navegador*/
-.ipf{
-    border-radius: 5px;
-    
-    width: 10%;
-    height: 10%;
-}
-.img-menu{
-    width: 50%;
-    border-radius: 4px;
-}
-.tipo-tex{
-    font-family:'Times New Roman', Times, serif;
-}
-.lista{
-    list-style: none;
-}
-span{
-    color: rgb(249,131,187);
-color: radial-gradient(circle, rgba(249,131,187,1) 0%, rgba(246,7,80,1) 100%);
+.ipf {
+  border-radius: 5px;
+
+  width: 10%;
+  height: 10%;
 }
 
+.img-menu {
+  width: 50%;
+  border-radius: 4px;
+}
+.tipo-tex {
+  font-family: "Times New Roman", Times, serif;
+}
+.lista {
+  list-style: none;
+}
+span {
+  color: rgb(249, 131, 187);
+  color: radial-gradient(
+    circle,
+    rgba(249, 131, 187, 1) 0%,
+    rgba(246, 7, 80, 1) 100%
+  );
+}
 
-.fondo-page1{
-    background-image: url(img/img-fondo.jpg) ;
+.fondo-page1 {
+  background-image: url(img/img-fondo.jpg);
 }
-.color-primario{
-    background-color: palevioletred !important;
+.color-primario {
+  background-color: palevioletred !important;
+}
+.espacio-superior {
+  margin-top: 2%;
+}
+.color-tex {
+  color: white;
+}
+body {
+  font-family: sans-serif;
+  padding-top: 90px 20px 0;
+}
+.header {
+  background: none;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav {
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px; /*para que se centre tos los link del menu al medio*/
+  margin: 0 auto; /*quede todo centrado 0 arri y abaj/ auto iz y derech*/
+}
+.nav-link {
+  color: wheat;
+  text-decoration: none;
+}
 
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+  text-decoration: none; /*para que saque la linea del enlase*/
+  color: #818081;
 }
-.espacio-superior{
-    margin-top: 2%;
+.nav-menu {
+  display: flex; /*quede en forma orizontal todo los linkd del menu*/
+  margin-right: 40px; /*queden separados entre ellos desde la derecha*/
+  list-style: none; /*borrar los puntitos que tienen la listas por defectos*/
 }
-.color-tex{
-    color: white;
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px; /*0 para arriba y abajo /1ppx para derecha y izquierda*/
+  line-height: 80px; /*alto de mi barra de nav*/
+  text-transform: uppercase; /*para que todo quede en mayuscula*/
+  width: max-content; /*para que no me corte el contenido*/
 }
-body{
-    font-family: sans-serif;
-    padding-top: 90px  20px 0;
+.nav-menu-link {
+  padding: 8px 12px; /*8px para arriba y abajo / 12px para derecha y izquierda*/
+  border-radius: 3px;
 }
-.header{
-    background:none;
-    height: 50px;
+.nav-menu-link:hover {
+  /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
+  background-color: #8a2be2;
+  transition: 0.5s; /*para que sea un poquito mas lento cuando pasemos la flechita*/
+}
+.nav-toggle {
+  color: white;
+  background: none; /*le sacamos los estilos que trae por defecto el boton*/
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+
+  display: none; /*es para que no se vea cuando tengamos la pantalla completa*/
+}
+/*diseño para dispositivos moviles*/
+@media (max-width: 768px) {
+  /*cuando mi pantalla tenga menos que 768 px se va aplicar estos estilos*/
+
+  body {
+    padding-top: 70px 20px 0;
+  }
+  .header {
+    background-image: url(img/fondo-navegador.jpg);
+    height: 60px; /*cambio de tamaño por el dispositivo mas pequeño*/
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+  }
 
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;/*para que se centre tos los link del menu al medio*/
-    margin: 0 auto;/*quede todo centrado 0 arri y abaj/ auto iz y derech*/
-
-
-}
-.nav-link{
-    color: wheat;
-    text-decoration: none;
-}
-
-.logo{
-    font-size: 30px;
-    font-weight: bold;
-    padding:0 40px;
-    line-height: 80px;
-    text-decoration: none;/*para que saque la linea del enlase*/
-    color:#818081;
-}
-.nav-menu{
-    display: flex; /*quede en forma orizontal todo los linkd del menu*/
-    margin-right: 40px;/*queden separados entre ellos desde la derecha*/
-    list-style: none;/*borrar los puntitos que tienen la listas por defectos*/
-    
-}  
-.nav-menu-item{
-    font-size: 18px;
-    margin: 0 10px;/*0 para arriba y abajo /1ppx para derecha y izquierda*/
-    line-height: 80px;/*alto de mi barra de nav*/
-    text-transform: uppercase;/*para que todo quede en mayuscula*/
-    width: max-content;/*para que no me corte el contenido*/
-    
-
-}
-.nav-menu-link{
-    padding: 8px 12px;/*8px para arriba y abajo / 12px para derecha y izquierda*/
-    border-radius: 3px;
-    
-
-}
-.nav-menu-link:hover{ /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
-    background-color: #8A2BE2;
-    transition: 0.5s;/*para que sea un poquito mas lento cuando pasemos la flechita*/
-
-
-}
-.nav-toggle{
-    color: white;
-    background: none;/*le sacamos los estilos que trae por defecto el boton*/
-    border: none;
-    font-size: 30px;
+  .logo {
+    font-size: 25px; /*cambio tamaño de fuente*/
     padding: 0 20px;
     line-height: 60px;
-
-    display: none;/*es para que no se vea cuando tengamos la pantalla completa*/
-
+  }
+  .nav-menu {
+    flex-direction: column; /*para poner todo el menu en columna*/
+    align-items: center; /*quede centrado mis enlaces*/
+    margin-right: 20px; /*queden separados entre ellos desde la derecha*/
+    background: none;
+    position: fixed; /*para que la psicion no dependa de donde se encuentra*/
+    left: 0;
+    top: 60px; /*alto de mi elemento*/
+    width: 100%; /*ancho 100%*/
+    padding: 20px 0; /*20px espacio arriba y abajo /0  para iz y dr para que no contenga ningun espacio en mi ancho de pagina*/
+  }
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px; /*0 para arriba y abajo /1ppx para derecha y izquierda*/
+    line-height: 70px; /*alto de mi barra de nav*/
+    text-transform: uppercase; /*para que todo quede en mayuscula*/
+    width: max-content; /*para que no me corte el contenido*/
+  }
+  .nav-menu-link {
+    padding: 8px 12px; /*8px para arriba y abajo / 12px para derecha y izquierda*/
+    border-radius: 3px;
+  }
+  .nav-menu-link:hover {
+    /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
+    background-color: #8a2be2;
+    color: #ff1493;
+  }
+  .nav-toggle {
+    display: block; /*para que aparesca el icon del menu*/
+  }
 }
-/*diseño para dispositivos moviles*/
-@media(max-width: 768px){/*cuando mi pantalla tenga menos que 768 px se va aplicar estos estilos*/
-    
-    body{
-        padding-top: 70px  20px 0;
-    }
-    .header{
-        background-image: url(img/fondo-navegador.jpg);
-        height: 60px;/*cambio de tamaño por el dispositivo mas pequeño*/
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-    
-    }
-   
-    
-    .logo{
-        font-size: 25px;/*cambio tamaño de fuente*/
-        padding:0 20px;
-        line-height: 60px;
-    }
-    .nav-menu{
-        flex-direction: column; /*para poner todo el menu en columna*/
-        align-items: center;/*quede centrado mis enlaces*/
-        margin-right: 20px;/*queden separados entre ellos desde la derecha*/
-        background:none;
-        position:fixed ;/*para que la psicion no dependa de donde se encuentra*/
-        left: 0;
-        top: 60px;/*alto de mi elemento*/
-        width: 100%;/*ancho 100%*/
-        padding: 20px 0;/*20px espacio arriba y abajo /0  para iz y dr para que no contenga ningun espacio en mi ancho de pagina*/
-        
-    }  
-    .nav-menu-item{
-        font-size: 18px;
-        margin: 0 10px;/*0 para arriba y abajo /1ppx para derecha y izquierda*/
-        line-height: 70px;/*alto de mi barra de nav*/
-        text-transform: uppercase;/*para que todo quede en mayuscula*/
-        width: max-content;/*para que no me corte el contenido*/
-    }
-    .nav-menu-link{
-        padding: 8px 12px;/*8px para arriba y abajo / 12px para derecha y izquierda*/
-        border-radius: 3px;
-    }
-    .nav-menu-link:hover{ /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
-        background-color: #8A2BE2;
-        color: #FF1493;
-       
-    
-    }
-    .nav-toggle{
-        display: block;/*para que aparesca el icon del menu*/
-    }
-    
-
-
+footer {
+  background-image: url(img/img-fondo.jpg);
+  width: 100%;
+  height: auto;
+  line-height: 100px; /*alto de mi barra de nav*/
 }
-footer{
-    background-image: url(img/img-fondo.jpg);
-    width: 100%;
-    height: auto;
-    line-height: 100px;/*alto de mi barra de nav*/
+.en-fila {
+  display: flex; /*quede en forma orizontal todo los linkd del menu*/
+  margin-right: 40px; /*queden separados entre ellos desde la derecha*/
+  list-style: none; /*borrar los puntitos que tienen la listas por defectos*/
+  color: gray;
 }
-.en-fila{
-   
-    display: flex; /*quede en forma orizontal todo los linkd del menu*/
-    margin-right: 40px;/*queden separados entre ellos desde la derecha*/
-    list-style: none;/*borrar los puntitos que tienen la listas por defectos*/ 
-    color: gray;
+.tamaño-img {
+  width: 10%;
 }
-.tamaño-img{
-    width: 10%;
-    
-} 
-   
-
