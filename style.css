@@ -21,19 +21,19 @@
   list-style: none;
 }
 span {
-  color: rgb(249, 131, 187);
-  color: radial-gradient(
-    circle,
-    rgba(249, 131, 187, 1) 0%,
-    rgba(246, 7, 80, 1) 100%
-  );
+    color: #6E2C00;
 }
 
 .fondo-page1 {
-  background-image: url(img/img-fondo.jpg);
+  background-image: url(img/correccion-fondo.jpg);
+  padding-bottom: 50%;
 }
 .color-primario {
-  background-color: palevioletred !important;
+  background-color: #D2B48C !important;
+  
+}
+.color-primario:hover{
+    background-color: white !important;
 }
 .espacio-superior {
   margin-top: 2%;
@@ -46,7 +46,7 @@ body {
   padding-top: 90px 20px 0;
 }
 .header {
-  background: none;
+  background-color: white;
   height: 50px;
   position: fixed;
   width: 100%;
@@ -69,7 +69,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   padding: 0 40px;
-  line-height: 80px;
+  line-height: 90%;
   text-decoration: none; /*para que saque la linea del enlase*/
   color: #818081;
 }
@@ -77,11 +77,12 @@ body {
   display: flex; /*quede en forma orizontal todo los linkd del menu*/
   margin-right: 40px; /*queden separados entre ellos desde la derecha*/
   list-style: none; /*borrar los puntitos que tienen la listas por defectos*/
+  
 }
 .nav-menu-item {
   font-size: 18px;
   margin: 0 10px; /*0 para arriba y abajo /1ppx para derecha y izquierda*/
-  line-height: 80px; /*alto de mi barra de nav*/
+  line-height: 90%; /*alto de mi barra de nav*/
   text-transform: uppercase; /*para que todo quede en mayuscula*/
   width: max-content; /*para que no me corte el contenido*/
 }
@@ -91,7 +92,7 @@ body {
 }
 .nav-menu-link:hover {
   /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
-  background-color: #8a2be2;
+  background-color: #DEB887;
   transition: 0.5s; /*para que sea un poquito mas lento cuando pasemos la flechita*/
 }
 .nav-toggle {
@@ -156,18 +157,26 @@ body {
     display: block; /*para que aparesca el icon del menu*/
   }
 }
+
 footer {
-  background-image: url(img/img-fondo.jpg);
+  background-color: #D2B48C;
   width: 100%;
   height: auto;
-  line-height: 100px; /*alto de mi barra de nav*/
+  line-height: 100%; /*alto de mi barra de nav*/
+  
 }
 .en-fila {
   display: flex; /*quede en forma orizontal todo los linkd del menu*/
-  margin-right: 40px; /*queden separados entre ellos desde la derecha*/
+  margin-right: 20px; /*queden separados entre ellos desde la derecha*/
   list-style: none; /*borrar los puntitos que tienen la listas por defectos*/
   color: gray;
 }
 .tamaño-img {
   width: 10%;
+}
+.autor{
+    text-align: center;
+}
+.volver{
+    list-style: none;
 }
