@@ -1,17 +1,34 @@
-.wrapper{  /*es una clase nomas*/
+.paren{  /*es una clase nomas*/
     display: grid;/*para llamar a grid*/
-    grid-template-columns: repeat(3, 2fr);/*le estoy diciendo que me separe las fotos en 3 columnasy que cada una de las imagenes sea de 1 graccion*/
+    grid-template-columns: repeat(3,1fr);/*le estoy diciendo que me separe las fotos en 3 columnasy que cada una de las imagenes sea de 1 fraccion*/
+    gap: 10px;/*es para poner una separacion entre las celdas*/
+    
 }
-.wrapper > div {
+.item{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background-image: none;
+}
+.item:hover{
+    background-image: url(img/code-img.jpg);
+}
+.item>img{
+    text-align: center;
+}
+.img-alinear{
+    margin: auto;
+}
+/*.paren> div {
     background-color: #ecf0f1;
 
 
-}
+}*/
 .wrapper > div:hover{  /*para cuando pase mi flechita se vea una borde como con efecto*/
     border: 2px solid rgb(88, 83, 83);
 }
 img{
-    width: 400px;
+    width: 40%;
     
 }
 .fondo-body{
@@ -39,6 +56,7 @@ h4:hover{
 }
 .foter-alig{
     text-align: center;
+    padding-bottom: 10%;
 }
 .color-proyec:hover{
    background-image: url(img/code-img.jpg);
@@ -71,4 +89,12 @@ h4:hover{
 .header-fondo:hover{
     background-image: url(img/separador.jpg) !important;
     color: rgb(245, 242, 240) !important;
+}
+/*sobre-mi fondo*/
+.main-fondo{
+    text-align: center;
+    font-family:cursive;
+}
+.espacio-superior{
+    padding-bottom: 8%;
 }
