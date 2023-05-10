@@ -1,100 +1,98 @@
-.paren{  /*es una clase nomas*/
-    display: grid;/*para llamar a grid*/
-    grid-template-columns: repeat(3,1fr);/*le estoy diciendo que me separe las fotos en 3 columnasy que cada una de las imagenes sea de 1 fraccion*/
-    gap: 10px;/*es para poner una separacion entre las celdas*/
-    
+/*Esto es de la pagina Habilidades */
+.paren {
+  /*es una clase nomas*/
+  display: grid; /*para llamar a grid*/
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /*le estoy diciendo que me separe las fotos en 3 columnasy que cada una de las imagenes sea de 1 fraccion*/
+  gap: 10px; /*es para poner una separacion entre las celdas*/
 }
-.item{
-    width: 300px;
-    height: 200px;
-    margin: auto;
-    background-image: none;
+.item {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  background-image: none;
 }
-.item:hover{
-    background-image: url(img/code-img.jpg);
+.item:hover {
+  background-image: url(img/code-img.jpg);
 }
-.item>img{
-    text-align: center;
+.item > img {
+  text-align: center;
 }
-.img-alinear{
-    margin: auto;
+.img-alinear {
+  margin: auto;
 }
 /*.paren> div {
     background-color: #ecf0f1;
 
 
 }*/
-.wrapper > div:hover{  /*para cuando pase mi flechita se vea una borde como con efecto*/
-    border: 2px solid rgb(88, 83, 83);
+
+img {
+  width: 40%;
 }
-img{
-    width: 40%;
-    
+.fondo-body {
+  background-image: url(img/fondo-habilidades.jpg);
 }
-.fondo-body{
-    background-image: url(img/fondo-habilidades.jpg);
+.seleciona:hover {
+  background-color: #d2b48c;
 }
-.seleciona:hover{
-    background-color: #D2B48C;
-}
-h4:hover{
-  font-family:Georgia, 'Times New Roman', Times, serif;
+h4:hover {
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-image: url(img/fondo-navegador.jpg);
   color: white;
 }
-.sobre-mi:hover{
-    background-image: url(img/fondo-navegador.jpg);
-    color: white !important;
+.sobre-mi:hover {
+  background-image: url(img/fondo-navegador.jpg);
+  color: white !important;
 }
-.navbar{
-    background-image: url(img/fondo-navegador.jpg);
-    
+.navbar {
+  background-image: url(img/fondo-navegador.jpg);
 }
-.navbar-brand{
-    color: white !important;
-    
+.navbar-brand {
+  color: white !important;
 }
-.foter-alig{
-    text-align: center;
-    padding-bottom: 10%;
+.foter-alig {
+  text-align: center;
+  padding-bottom: 10%;
 }
-.color-proyec:hover{
-   background-image: url(img/code-img.jpg);
+.color-proyec:hover {
+  background-image: url(img/code-img.jpg);
 }
 
 /* navegador -tipos de habilidad */
-.nav-habilida{
-    display: flex;
-    flex-direction:row-reverse;
-    
+.nav-habilida {
+  display: flex;
+  flex-direction: row-reverse;
 }
-.enlace{
-    text-decoration: none;
-    color: rgb(65, 31, 7);
-    background-color: white;
-    border-radius: 5px;
+.enlace {
+  text-decoration: none;
+  color: rgb(65, 31, 7);
+  background-color: white;
+  border-radius: 5px;
 }
-.enlace:hover{
-    background-color: rgb(63, 31, 8);
-    color: white;
+.enlace:hover {
+  background-color: rgb(63, 31, 8);
+  color: white;
 }
-.tipo-habilidad{
-    color: white;
-    margin-right: 40px; /*queden separados entre ellos desde la derecha*/
+.tipo-habilidad {
+  color: white;
+  margin-right: 40px; /*queden separados entre ellos desde la derecha*/
 }
 /* estilo boton de volver */
-.color-primario{
-    background-image: url(img/fondo-navegador.jpg);
+.color-primario {
+  background-image: url(img/fondo-navegador.jpg);
 }
-.header-fondo:hover{
-    background-image: url(img/separador.jpg) !important;
-    color: rgb(245, 242, 240) !important;
+.header-fondo:hover {
+  background-image: url(img/separador.jpg) !important;
+  color: rgb(245, 242, 240) !important;
 }
 /*sobre-mi fondo*/
-.main-fondo{
-    text-align: center;
-    font-family:cursive;
+.main-fondo {
+  text-align: center;
+  font-family: cursive;
 }
-.espacio-superior{
-    padding-bottom: 8%;
+.espacio-superior {
+  padding-bottom: 8%;
 }
