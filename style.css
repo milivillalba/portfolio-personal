@@ -1,3 +1,5 @@
+/* MI ESTILO DE INDEX */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,34 +12,34 @@
   height: 10%;
 }
 
-.img-menu {
-  width: 50%;
-  border-radius: 4px;
-}
+/* tex aling de mi COLUMNA 1 */
 .tipo-tex {
   font-family: "Times New Roman", Times, serif;
 }
+/* listas de mis datos (ul) */
 .lista {
   list-style: none;
 }
 span {
     color: #6E2C00;
 }
-
+/* fondo de la fila contenedor general  */
 .fondo-page1 {
   background-image: url(img/correccion-fondo.jpg);
   padding-bottom: 50%;
 }
+ /* estilos a los botones */
 .color-primario {
   background-color: #D2B48C !important;
   
 }
-.color-primario:hover{
+.color-primario:hover{ /*hover es una palabra clave*/
     background-color: white !important;
 }
 .espacio-superior {
   margin-top: 2%;
 }
+ /*color de los textos de mis datos*/
 .color-tex {
   color: white;
 }
@@ -45,14 +47,16 @@ body {
   font-family: sans-serif;
   padding-top: 90px 20px 0;
 }
+ /*encabezado*/
 .header {
   background-color: white;
   height: 50px;
-  position: fixed;
+  position: fixed;/*posicion filex el contenido siempre queda en el mismo lugar*/
   width: 100%;
   top: 0;
   left: 0;
 }
+/*navegador*/
 .nav {
   display: grid;
   display: flex;
@@ -95,17 +99,8 @@ body {
   background-color: #DEB887;
   transition: 0.5s; /*para que sea un poquito mas lento cuando pasemos la flechita*/
 }
-.nav-toggle {
-  color: white;
-  background: none; /*le sacamos los estilos que trae por defecto el boton*/
-  border: none;
-  font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
 
-  display: none; /*es para que no se vea cuando tengamos la pantalla completa*/
-}
-/*diseño para dispositivos moviles*/
+/*diseño para dispositivos moviles / MEDIAQUERY*/
 @media (max-width: 768px) {
   /*cuando mi pantalla tenga menos que 768 px se va aplicar estos estilos*/
 
@@ -125,6 +120,7 @@ body {
     font-size: 25px; /*cambio tamaño de fuente*/
     padding: 0 20px;
     line-height: 60px;
+    color: white;
   }
   .nav-menu {
     flex-direction: column; /*para poner todo el menu en columna*/
@@ -150,12 +146,10 @@ body {
   }
   .nav-menu-link:hover {
     /*para que cuando pasemos la flechita por encima del lin se ponga en otro color*/
-    background-color: #8a2be2;
-    color: #ff1493;
+    background-color: #DEB887;
+    
   }
-  .nav-toggle {
-    display: block; /*para que aparesca el icon del menu*/
-  }
+  
 }
 
 footer {
